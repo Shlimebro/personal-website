@@ -40,6 +40,7 @@ export default function Home() {
                   alt="William Yan"
                   fill
                   priority
+                  unoptimized
                   className="object-cover"
                 />
               </div>
@@ -55,7 +56,7 @@ export default function Home() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">About Me</h2>
               <p className="max-w-[900px] text-gray-500 md:text-xl dark:text-gray-400">
-                I am a passionate and results-driven Sport Management student at New York University, with an interest in data analytics, tech, AI, and telecom industries. I thrive in roles where I can apply analytical thinking and innovative solutions to drive operational improvements and business growth.
+                I am a passionate and results-driven Data Analytics student at New York University, with an interest in data analytics, tech, AI, and telecom industries. I thrive in roles where I can apply analytical thinking and innovative solutions to drive operational improvements and business growth.
               </p>
             </div>
             <div className="w-full max-w-3xl space-y-4">
