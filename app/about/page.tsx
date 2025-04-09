@@ -44,7 +44,7 @@ export default function AboutPage() {
 
         <div className="flex flex-col gap-6">
           <div className="relative aspect-video overflow-hidden rounded-lg">
-            <Image src="/placeholder-user.jpg" alt="William Yan" fill unoptimized className="object-cover" />
+            <Image src="/headshot.jpeg" alt="William Yan" fill unoptimized className="object-cover" />
           </div>
 
           <div>

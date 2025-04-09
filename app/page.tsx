@@ -36,7 +36,7 @@ export default function Home() {
             <div className="flex items-center justify-center">
               <div className="relative aspect-square overflow-hidden rounded-full border-4 border-primary/20 w-[280px] h-[280px] md:w-[320px] md:h-[320px]">
                 <Image
-                  src="/placeholder-user.jpg"
+                  src="/headshot.jpeg"
                   alt="William Yan"
                   fill
                   priority
