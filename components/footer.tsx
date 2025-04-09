@@ -25,9 +25,6 @@ export default function Footer() {
           <Link className="hover:underline" href="/resume">
             Resume
           </Link>
-          <Link className="hover:underline" href="/blog">
-            Blog
-          </Link>
           <Link className="hover:underline" href="/contact">
             Contact
           </Link>

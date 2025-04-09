@@ -25,10 +25,6 @@ export default function Navbar() {
       label: "Resume",
     },
     {
-      href: "/blog",
-      label: "Blog",
-    },
-    {
       href: "/contact",
       label: "Contact",
     },

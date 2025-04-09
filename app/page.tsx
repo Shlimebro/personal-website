@@ -2,8 +2,6 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Download, Mail } from "lucide-react"
-import ProjectCard from "@/components/project-card"
-import ArticleCard from "@/components/article-card"
 import { resumeData } from "@/lib/metadata"
 
 export default function Home() {
@@ -38,7 +36,7 @@ export default function Home() {
             <div className="flex items-center justify-center">
               <div className="relative aspect-square overflow-hidden rounded-full border-4 border-primary/20 w-[280px] h-[280px] md:w-[320px] md:h-[320px]">
                 <Image
-                  src="/william-profile.jpg"
+                  src="/placeholder-user.jpg"
                   alt="William Yan"
                   fill
                   priority
@@ -184,37 +182,6 @@ export default function Home() {
             </div>
             <Button variant="outline" asChild>
               <Link href="/projects">View All Projects</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Latest Articles section */}
-      <section className="py-12 bg-muted/50">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Latest Articles</h2>
-              <p className="max-w-[900px] text-gray-500 md:text-xl dark:text-gray-400">
-                Insights and thoughts on data science, business analytics, and industry trends.
-              </p>
-            </div>
-            <div className="grid w-full max-w-5xl grid-cols-1 gap-6 md:grid-cols-2">
-              <ArticleCard
-                title="Data Analysis in Business Operations"
-                excerpt="How data-driven insights can improve operational efficiency and employee satisfaction in corporate environments."
-                date="Coming soon"
-                slug="data-analysis-business-operations"
-              />
-              <ArticleCard
-                title="Macroeconomic Research Methods"
-                excerpt="Exploring various approaches to conducting comprehensive macroeconomic research for investment opportunities."
-                date="Coming soon"
-                slug="macroeconomic-research-methods"
-              />
-            </div>
-            <Button variant="outline" asChild>
-              <Link href="/blog">Read All Articles</Link>
             </Button>
           </div>
         </div>

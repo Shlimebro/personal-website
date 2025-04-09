@@ -68,10 +68,6 @@ export const navLinks = [
     href: "/resume",
   },
   {
-    title: "Blog",
-    href: "/blog",
-  },
-  {
     title: "Contact",
     href: "/contact",
   },
