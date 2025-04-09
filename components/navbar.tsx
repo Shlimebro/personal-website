@@ -25,12 +25,12 @@ export default function Navbar() {
       label: "Resume",
     },
     {
-      href: "/projects",
-      label: "Projects",
-    },
-    {
       href: "/blog",
       label: "Blog",
+    },
+    {
+      href: "/contact",
+      label: "Contact",
     },
   ]
 
@@ -38,8 +38,8 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold">
-          <span className="text-xl text-primary">YN</span>
-          <span className="hidden sm:inline-block">Your Name</span>
+          <span className="text-xl text-primary">WY</span>
+          <span className="hidden sm:inline-block">William Yan</span>
         </Link>
         <nav className="hidden md:flex md:gap-6">
           {routes.map((route) => (
@@ -68,8 +68,8 @@ export default function Navbar() {
             <SheetContent side="right">
               <div className="grid gap-6 py-6">
                 <Link href="/" className="flex items-center gap-2 font-bold" onClick={() => setIsOpen(false)}>
-                  <span className="text-xl text-primary">YN</span>
-                  <span>Your Name</span>
+                  <span className="text-xl text-primary">WY</span>
+                  <span>William Yan</span>
                 </Link>
                 <div className="grid gap-3">
                   {routes.map((route) => (

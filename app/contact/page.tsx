@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { Check, Github, Linkedin, Mail, MapPin, MessageSquare, Twitter } from "lucide-react"
+import { Check, Linkedin, Mail, MapPin, MessageSquare, Phone } from "lucide-react"
 
 export default function ContactPage() {
   const [formStatus, setFormStatus] = useState<"idle" | "submitting" | "success" | "error">("idle")
@@ -30,8 +30,7 @@ export default function ContactPage() {
     <div className="container mx-auto px-4 py-12 md:py-16">
       <h1 className="mb-6 text-3xl font-bold md:text-4xl">Contact Me</h1>
       <p className="mb-10 max-w-3xl text-muted-foreground">
-        Interested in working together or have a question? Feel free to reach out using the form below or through my
-        social media channels.
+        Interested in connecting or discussing opportunities? Feel free to reach out using the form below or through my contact information.
       </p>
 
       <div className="grid gap-8 md:grid-cols-2">
@@ -93,7 +92,7 @@ export default function ContactPage() {
                 <MapPin className="mr-3 h-5 w-5 text-primary" />
                 <div>
                   <h3 className="font-medium">Location</h3>
-                  <p className="text-sm text-muted-foreground">San Francisco, CA</p>
+                  <p className="text-sm text-muted-foreground">New York, NY</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -101,8 +100,15 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-medium">Email</h3>
                   <p className="text-sm">
-                    contact{"{"} at {"}"} yourname.com
+                    wy2327@nyu.edu
                   </p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <Phone className="mr-3 h-5 w-5 text-primary" />
+                <div>
+                  <h3 className="font-medium">Phone</h3>
+                  <p className="text-sm text-muted-foreground">574-216-6319</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -118,35 +124,17 @@ export default function ContactPage() {
           <Card>
             <CardHeader>
               <CardTitle>Connect With Me</CardTitle>
-              <CardDescription>Follow me on social media and professional networks.</CardDescription>
+              <CardDescription>Follow me on professional networks.</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/william-yan-4bb1a9274"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center rounded-md p-2 transition-colors hover:bg-muted"
               >
                 <Linkedin className="mr-3 h-5 w-5 text-[#0A66C2]" />
                 <span>LinkedIn</span>
-              </a>
-              <a
-                href="https://github.com/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center rounded-md p-2 transition-colors hover:bg-muted"
-              >
-                <Github className="mr-3 h-5 w-5" />
-                <span>GitHub</span>
-              </a>
-              <a
-                href="https://twitter.com/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center rounded-md p-2 transition-colors hover:bg-muted"
-              >
-                <Twitter className="mr-3 h-5 w-5 text-[#1DA1F2]" />
-                <span>Twitter</span>
               </a>
             </CardContent>
           </Card>

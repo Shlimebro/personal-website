@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Download, Mail } from "lucide-react"
 import ProjectCard from "@/components/project-card"
 import ArticleCard from "@/components/article-card"
+import { resumeData } from "@/lib/metadata"
 
 export default function Home() {
   return (
@@ -15,11 +16,10 @@ export default function Home() {
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  Hello, I'm <span className="text-primary">Your Name</span>
+                  Hello, I'm <span className="text-primary">William Yan</span>
                 </h1>
                 <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                  A passionate software developer specializing in creating exceptional digital experiences with modern
-                  technologies.
+                  Undergrad Student at NYU College of Arts and Science majoring in data science
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -30,7 +30,7 @@ export default function Home() {
                 </Button>
                 <Button variant="outline" asChild>
                   <Link href="/resume">
-                    <Download className="mr-2 h-4 w-4" /> Download Resume
+                    <Download className="mr-2 h-4 w-4" /> View Resume
                   </Link>
                 </Button>
               </div>
@@ -38,8 +38,8 @@ export default function Home() {
             <div className="flex items-center justify-center">
               <div className="relative aspect-square overflow-hidden rounded-full border-4 border-primary/20 w-[280px] h-[280px] md:w-[320px] md:h-[320px]">
                 <Image
-                  src="/placeholder.svg?height=320&width=320"
-                  alt="Profile Photo"
+                  src="/william-profile.jpg"
+                  alt="William Yan"
                   fill
                   priority
                   className="object-cover"
@@ -57,8 +57,7 @@ export default function Home() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">About Me</h2>
               <p className="max-w-[900px] text-gray-500 md:text-xl dark:text-gray-400">
-                I'm a dedicated professional with expertise in software development, focusing on creating user-centric
-                solutions. With a background in [Your Field/Education], I bring a unique perspective to every project.
+                I am a passionate and results-driven Sport Management student at New York University, with an interest in data analytics, tech, AI, and telecom industries. I thrive in roles where I can apply analytical thinking and innovative solutions to drive operational improvements and business growth.
               </p>
             </div>
             <div className="w-full max-w-3xl space-y-4">
@@ -67,7 +66,7 @@ export default function Home() {
                   <div className="rounded-full border border-primary/20 p-2">
                     <div className="rounded-full bg-primary/10 p-2">
                       <svg
-                        className=" h-6 w-6 text-primary"
+                        className="h-6 w-6 text-primary"
                         fill="none"
                         height="24"
                         stroke="currentColor"
@@ -84,14 +83,14 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold">Experience</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    5+ years of professional experience in software development
+                    Data analysis and business optimization experience at Jiangjia Electronics
                   </p>
                 </div>
                 <div className="flex flex-col items-center space-y-2 rounded-lg border p-4">
                   <div className="rounded-full border border-primary/20 p-2">
                     <div className="rounded-full bg-primary/10 p-2">
                       <svg
-                        className=" h-6 w-6 text-primary"
+                        className="h-6 w-6 text-primary"
                         fill="none"
                         height="24"
                         stroke="currentColor"
@@ -108,13 +107,15 @@ export default function Home() {
                     </div>
                   </div>
                   <h3 className="text-xl font-bold">Education</h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Bachelor's degree in Computer Science</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                    NYU College of Arts and Science, Data Science major
+                  </p>
                 </div>
                 <div className="flex flex-col items-center space-y-2 rounded-lg border p-4">
                   <div className="rounded-full border border-primary/20 p-2">
                     <div className="rounded-full bg-primary/10 p-2">
                       <svg
-                        className=" h-6 w-6 text-primary"
+                        className="h-6 w-6 text-primary"
                         fill="none"
                         height="24"
                         stroke="currentColor"
@@ -132,7 +133,9 @@ export default function Home() {
                     </div>
                   </div>
                   <h3 className="text-xl font-bold">Skills</h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Next.js, React, TypeScript, and more</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                    Excel, PowerPoint, PL/SQL, Python, Optimization
+                  </p>
                 </div>
               </div>
             </div>
@@ -193,21 +196,21 @@ export default function Home() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Latest Articles</h2>
               <p className="max-w-[900px] text-gray-500 md:text-xl dark:text-gray-400">
-                Insights and thoughts on technology, development, and industry trends.
+                Insights and thoughts on data science, business analytics, and industry trends.
               </p>
             </div>
             <div className="grid w-full max-w-5xl grid-cols-1 gap-6 md:grid-cols-2">
               <ArticleCard
-                title="The Future of Web Development"
-                excerpt="Exploring the latest trends and technologies shaping the future of web development."
-                date="April 15, 2023"
-                slug="future-of-web-development"
+                title="Data Analysis in Business Operations"
+                excerpt="How data-driven insights can improve operational efficiency and employee satisfaction in corporate environments."
+                date="Coming soon"
+                slug="data-analysis-business-operations"
               />
               <ArticleCard
-                title="Optimizing React Performance"
-                excerpt="Tips and techniques for improving the performance of your React applications."
-                date="March 22, 2023"
-                slug="optimizing-react-performance"
+                title="Macroeconomic Research Methods"
+                excerpt="Exploring various approaches to conducting comprehensive macroeconomic research for investment opportunities."
+                date="Coming soon"
+                slug="macroeconomic-research-methods"
               />
             </div>
             <Button variant="outline" asChild>
@@ -224,7 +227,7 @@ export default function Home() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Get In Touch</h2>
               <p className="max-w-[900px] text-gray-500 md:text-xl dark:text-gray-400">
-                Interested in working together? Feel free to reach out!
+                Interested in connecting or discussing opportunities? Feel free to reach out!
               </p>
             </div>
             <div className="w-full max-w-sm space-y-2">

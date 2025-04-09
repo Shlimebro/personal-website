@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button"
 import { CheckCircle2 } from "lucide-react"
 
 export const metadata = {
-  title: "About Me | Your Name",
-  description: "Learn more about my background, skills, and experience",
+  title: "About Me | William Yan",
+  description: "Learn more about my background, skills, and experience in data analytics",
 }
 
 export default function AboutPage() {
@@ -15,14 +15,15 @@ export default function AboutPage() {
         <div>
           <h1 className="mb-4 text-3xl font-bold md:text-4xl">About Me</h1>
           <p className="mb-6 text-muted-foreground">
-            I'm a passionate software developer with expertise in building modern, responsive web applications. With a
-            background in [your background], I bring a unique perspective to every project I work on.
+            I am a passionate and results-driven Sport Management student at New York University, with an interest in data analytics, tech, AI, and telecom industries. I thrive in roles where I can apply analytical thinking and innovative solutions to drive operational improvements and business growth.
           </p>
 
-          <h2 className="mb-3 mt-8 text-2xl font-bold">My Journey</h2>
           <p className="mb-6 text-muted-foreground">
-            I started my career in [year] as a [position] at [company]. Since then, I've worked on numerous projects
-            across different industries, helping businesses solve complex problems through technology.
+            With experience in macroeconomic research, employee satisfaction, and process optimization, I have helped organizations streamline operations and achieve measurable results. At Jiangjia Electronics, I led a project that improved communication efficiency by 36% and employee satisfaction by 21% while also launching initiatives like language programs for employees' families.
+          </p>
+          
+          <p className="mb-6 text-muted-foreground">
+            I am also proud to have helped reduce production costs by 4% by developing decision models and optimizing production schedules. Additionally, I have contributed to investment research at BMC Capital, analyzing macroeconomic trends and assessing investment opportunities in emerging sectors like electric vehicle technology.
           </p>
 
           <h2 className="mb-3 mt-8 text-2xl font-bold">Education</h2>
@@ -30,15 +31,8 @@ export default function AboutPage() {
             <li className="flex items-start">
               <CheckCircle2 className="mr-2 mt-1 h-5 w-5 text-primary" />
               <div>
-                <p className="font-medium">Bachelor's in Computer Science</p>
-                <p className="text-sm text-muted-foreground">University Name, 2018-2022</p>
-              </div>
-            </li>
-            <li className="flex items-start">
-              <CheckCircle2 className="mr-2 mt-1 h-5 w-5 text-primary" />
-              <div>
-                <p className="font-medium">Web Development Certification</p>
-                <p className="text-sm text-muted-foreground">Online Course Provider, 2020</p>
+                <p className="font-medium">Bachelor of Arts in Data Science</p>
+                <p className="text-sm text-muted-foreground">New York University, College of Arts and Science, 2023-2027 (Expected)</p>
               </div>
             </li>
           </ul>
@@ -50,22 +44,22 @@ export default function AboutPage() {
 
         <div className="flex flex-col gap-6">
           <div className="relative aspect-video overflow-hidden rounded-lg">
-            <Image src="/placeholder.svg?height=400&width=600" alt="Profile Image" fill className="object-cover" />
+            <Image src="/william-profile.jpg" alt="William Yan" fill className="object-cover" />
           </div>
 
           <div>
             <h2 className="mb-3 text-2xl font-bold">Skills & Expertise</h2>
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
               {[
-                "JavaScript",
-                "TypeScript",
-                "React",
-                "Next.js",
-                "Node.js",
-                "CSS/Tailwind",
-                "Git",
-                "Responsive Design",
-                "Testing",
+                "Excel",
+                "PowerPoint",
+                "Word",
+                "Canva",
+                "PL/SQL",
+                "Python",
+                "Data Analysis",
+                "Optimization",
+                "Chinese",
               ].map((skill) => (
                 <div key={skill} className="rounded-md border border-border bg-background px-3 py-1 text-sm">
                   {skill}
@@ -77,8 +71,7 @@ export default function AboutPage() {
           <div>
             <h2 className="mb-3 text-2xl font-bold">Personal Interests</h2>
             <p className="text-muted-foreground">
-              When I'm not coding, you can find me [your interests, e.g., hiking, reading, playing music, etc.]. I
-              believe that maintaining a well-rounded lifestyle fuels creativity and problem-solving abilities.
+              I am deeply passionate about basketball and skiing, which fuel my commitment to teamwork, perseverance, and continuous learning. These activities have taught me valuable life lessons about discipline, focus, and achieving goals through consistent effort.
             </p>
           </div>
         </div>
