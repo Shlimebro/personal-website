@@ -28,7 +28,7 @@ export default function Home() {
                   </Link>
                 </Button>
                 <Button variant="outline" asChild>
-                  <Link href="/resume">
+                  <Link href="/William_Yan_resume.pdf">
                     <Download className="mr-2 h-4 w-4" /> View Resume
                   </Link>
                 </Button>
@@ -157,30 +157,7 @@ export default function Home() {
               </p>
             </div>
             <div className="grid w-full max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <ProjectCard
-                title="E-Commerce Platform"
-                description="A modern e-commerce platform built with Next.js and Stripe."
-                imageUrl="/placeholder.svg?height=200&width=300"
-                demoUrl="https://demo-project.com"
-                githubUrl="https://github.com/yourusername/project"
-                technologies={["Next.js", "TypeScript", "Stripe"]}
-              />
-              <ProjectCard
-                title="Dashboard App"
-                description="An analytics dashboard with data visualization using chart.js."
-                imageUrl="/placeholder.svg?height=200&width=300"
-                demoUrl="https://demo-project.com"
-                githubUrl="https://github.com/yourusername/project"
-                technologies={["React", "TypeScript", "Chart.js"]}
-              />
-              <ProjectCard
-                title="Social Media API"
-                description="RESTful API for a social media application with authentication."
-                imageUrl="/placeholder.svg?height=200&width=300"
-                demoUrl="https://demo-project.com"
-                githubUrl="https://github.com/yourusername/project"
-                technologies={["Node.js", "Express", "MongoDB"]}
-              />
+              <p className="text-center text-muted-foreground md:col-span-2 lg:col-span-3">More projects coming soon...</p>
             </div>
             <Button variant="outline" asChild>
               <Link href="/projects">View All Projects</Link>

@@ -38,13 +38,13 @@ export default function AboutPage() {
           </ul>
 
           <Button asChild>
-            <Link href="/resume">View Full Resume</Link>
+            <Link href="/William_Yan_resume.pdf">View Full Resume</Link>
           </Button>
         </div>
 
         <div className="flex flex-col gap-6">
           <div className="relative aspect-video overflow-hidden rounded-lg">
-            <Image src="/headshot.jpeg" alt="William Yan" fill unoptimized className="object-cover" />
+            <Image src="/nyu-logo.jpeg" alt="NYU Logo" fill unoptimized className="object-cover" />
           </div>
 
           <div>
