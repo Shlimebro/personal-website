@@ -15,7 +15,7 @@ export default function AboutPage() {
         <div>
           <h1 className="mb-4 text-3xl font-bold md:text-4xl">About Me</h1>
           <p className="mb-6 text-muted-foreground">
-            I am a passionate and results-driven Data Analytics student at New York University, with an interest in data analytics, tech, AI, and telecom industries. I thrive in roles where I can apply analytical thinking and innovative solutions to drive operational improvements and business growth.
+            I am a passionate and results-driven Data Science student at New York University, with an interest in data analytics, tech, AI, and telecom industries. I thrive in roles where I can apply analytical thinking and innovative solutions to drive operational improvements and business growth.
           </p>
 
           <p className="mb-6 text-muted-foreground">
