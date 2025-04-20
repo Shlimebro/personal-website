@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Download, Mail } from "lucide-react"
 import { resumeData } from "@/lib/metadata"
+import ProjectCard from "@/components/project-card"
 
 export default function Home() {
   return (
